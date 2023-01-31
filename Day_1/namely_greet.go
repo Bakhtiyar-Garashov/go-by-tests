@@ -1,9 +1,14 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+const GREET_STRING_PREFIX = "Hello"
 
 func NamelyGreet(name string) string {
-	return fmt.Sprintf("Hello, %s!", name)
+
+	if name == "" {
+		return fmt.Sprintf("%s, World!", GREET_STRING_PREFIX)
+	} else {
+		return fmt.Sprintf("%s, %s!", GREET_STRING_PREFIX, name)
+	}
 }
