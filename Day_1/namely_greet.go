@@ -1,9 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func NamelyGreet() string {
-	var name string = "Road Runner"
-
+func NamelyGreet(name string) string {
 	return fmt.Sprintf("Hello, %s!", name)
 }
