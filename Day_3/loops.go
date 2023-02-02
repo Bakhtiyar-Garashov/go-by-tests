@@ -1,4 +1,4 @@
-package loops
+package main
 
 func RepeatChar(chr string, times int) (result string) {
 
